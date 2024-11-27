@@ -3,23 +3,30 @@
   padding: 0;
 }
 
-li {
+ul.parent {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: gray;
 }
 
-ul {
-  display: flex;
-  justify-content: flex-end;
-  background-color: grey;
+li {
+  position: relative;
 }
-ul li {
-  text-decoration: none;
+li a {
+  padding: 10px;
   text-transform: uppercase;
-  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  color: #FFF;
 }
-ul li:hover {
+li a:hover {
   color: red;
 }
-ul li {
-  padding: 15px;
+li a ul {
+  position: number;
+  display: none;
+  background-color: gray;
+  width: 150px;
+  padding: 5px;
 }/*# sourceMappingURL=style.css.map */
