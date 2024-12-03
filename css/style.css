@@ -3,23 +3,65 @@
   padding: 0;
 }
 
-li {
-  list-style: none;
-}
-
-ul {
+ul.parent {
   display: flex;
+  list-style: none;
   justify-content: flex-end;
-  background-color: grey;
+  background-color: gray;
+  padding: 5px;
 }
-ul li {
+ul.parent li {
+  position: relative;
+}
+ul.parent li a {
+  padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
 }
-ul li:hover {
+ul.parent li a:hover {
   color: red;
 }
-ul li {
-  padding: 15px;
+
+.header {
+  background-image: url("../images/planepic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 260px;
+  width: 100%;
+}
+
+.content .products {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  gap: 5px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.content .products li {
+  height: 245px;
+  width: 225px;
+  position: relative;
+  background-color: gray;
+}
+.content .products li button {
+  position: absolute;
+  bottom: 0;
+  height: 24px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
 }/*# sourceMappingURL=style.css.map */
